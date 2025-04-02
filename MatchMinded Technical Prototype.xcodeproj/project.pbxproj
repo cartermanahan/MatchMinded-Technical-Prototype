@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6F51357D2D99C0F700015180 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6F51357C2D99C0F700015180 /* FirebaseAnalytics */; };
+		6F51357F2D99C0F700015180 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6F51357E2D99C0F700015180 /* FirebaseAuth */; };
+		6F5135812D99C0F700015180 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6F5135802D99C0F700015180 /* FirebaseCore */; };
+		6F5135832D99C0F700015180 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6F5135822D99C0F700015180 /* FirebaseCrashlytics */; };
+		6F5135852D99C0F700015180 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6F5135842D99C0F700015180 /* FirebaseDatabase */; };
+		6F5135872D99C0F700015180 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 6F5135862D99C0F700015180 /* FirebaseDynamicLinks */; };
+		6F5135892D99C0F700015180 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6F5135882D99C0F700015180 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6F5135612D99BCAA00015180 /* MatchMinded Technical Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MatchMinded Technical Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +33,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F5135852D99C0F700015180 /* FirebaseDatabase in Frameworks */,
+				6F51357D2D99C0F700015180 /* FirebaseAnalytics in Frameworks */,
+				6F5135832D99C0F700015180 /* FirebaseCrashlytics in Frameworks */,
+				6F5135812D99C0F700015180 /* FirebaseCore in Frameworks */,
+				6F51357F2D99C0F700015180 /* FirebaseAuth in Frameworks */,
+				6F5135872D99C0F700015180 /* FirebaseDynamicLinks in Frameworks */,
+				6F5135892D99C0F700015180 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				6F5135632D99BCAA00015180 /* MatchMinded Technical Prototype */,
+				6F51357B2D99C0F700015180 /* Frameworks */,
 				6F5135622D99BCAA00015180 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +61,13 @@
 				6F5135612D99BCAA00015180 /* MatchMinded Technical Prototype.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6F51357B2D99C0F700015180 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +90,13 @@
 			);
 			name = "MatchMinded Technical Prototype";
 			packageProductDependencies = (
+				6F51357C2D99C0F700015180 /* FirebaseAnalytics */,
+				6F51357E2D99C0F700015180 /* FirebaseAuth */,
+				6F5135802D99C0F700015180 /* FirebaseCore */,
+				6F5135822D99C0F700015180 /* FirebaseCrashlytics */,
+				6F5135842D99C0F700015180 /* FirebaseDatabase */,
+				6F5135862D99C0F700015180 /* FirebaseDynamicLinks */,
+				6F5135882D99C0F700015180 /* FirebaseFirestore */,
 			);
 			productName = "MatchMinded Technical Prototype";
 			productReference = 6F5135612D99BCAA00015180 /* MatchMinded Technical Prototype.app */;
@@ -78,7 +110,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					6F5135602D99BCAA00015180 = {
 						CreatedOnToolsVersion = 16.2;
@@ -94,6 +126,9 @@
 			);
 			mainGroup = 6F5135582D99BCAA00015180;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6F51357A2D99BFCA00015180 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6F5135622D99BCAA00015180 /* Products */;
 			projectDirPath = "";
@@ -159,7 +194,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 29K59L5YV4;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -220,7 +257,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 29K59L5YV4;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -247,11 +286,13 @@
 				CODE_SIGN_ENTITLEMENTS = "MatchMinded Technical Prototype/MatchMinded_Technical_Prototype.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MatchMinded Technical Prototype/Preview Content\"";
-				DEVELOPMENT_TEAM = 29K59L5YV4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MatchMinded;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -260,9 +301,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -270,10 +310,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatchMinded-Technical-Prototype";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
@@ -286,11 +327,13 @@
 				CODE_SIGN_ENTITLEMENTS = "MatchMinded Technical Prototype/MatchMinded_Technical_Prototype.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MatchMinded Technical Prototype/Preview Content\"";
-				DEVELOPMENT_TEAM = 29K59L5YV4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MatchMinded;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -299,9 +342,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -309,10 +351,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatchMinded-Technical-Prototype";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
@@ -339,6 +382,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F51357A2D99BFCA00015180 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F51357C2D99C0F700015180 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F51357A2D99BFCA00015180 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6F51357E2D99C0F700015180 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F51357A2D99BFCA00015180 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6F5135802D99C0F700015180 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F51357A2D99BFCA00015180 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		6F5135822D99C0F700015180 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F51357A2D99BFCA00015180 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		6F5135842D99C0F700015180 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F51357A2D99BFCA00015180 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6F5135862D99C0F700015180 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F51357A2D99BFCA00015180 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		6F5135882D99C0F700015180 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F51357A2D99BFCA00015180 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F5135592D99BCAA00015180 /* Project object */;
 }
